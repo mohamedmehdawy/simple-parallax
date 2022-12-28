@@ -5,7 +5,7 @@ body {
     height: 100vh;
     overflow-y: scroll;
     position: relative;
-    perspective: 100px;
+    perspective: 10px;
 }
 .wrapper header {
     height: 100%;
@@ -14,6 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: -1;
+    transform-style: preserve-3d;
+
 
 }
 .wrapper header img {
@@ -24,6 +26,12 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+}
+.wrapper header img:first-of-type {
+    transform: translateZ(-10px) scale(2);
+}
+.wrapper header img:last-of-type {
+    transform: translateZ(-5px) scale(1.5);
 }
 .wrapper header h1 {
     color: #fff;
