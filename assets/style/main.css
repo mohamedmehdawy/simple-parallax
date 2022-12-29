@@ -4,6 +4,7 @@ body {
 .wrapper {
     height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
     position: relative;
     perspective: 10px;
 }
@@ -28,10 +29,10 @@ body {
     z-index: -1;
 }
 .wrapper header img:first-of-type {
-    transform: translateZ(-10px) scale(2);
+    transform: translateZ(-10px) scale(2.1);
 }
 .wrapper header img:last-of-type {
-    transform: translateZ(-5px) scale(1.5);
+    transform: translateZ(-5px) scale(1.6);
 }
 .wrapper header h1 {
     color: #fff;
